@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -373,9 +372,9 @@ export const AuthForm = () => {
                   {isIdValid !== null && (
                     <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
                       {isIdValid ? (
-                        <CheckCircle2 className="h-5 w-5 text-green-500" />
+                        <CheckCircle2 className="h-5 w-5 text-green-500" data-testid="valid-id-icon-signup" />
                       ) : (
-                        <AlertCircle className="h-5 w-5 text-red-500" />
+                        <AlertCircle className="h-5 w-5 text-red-500" data-testid="invalid-id-icon-signup" />
                       )}
                     </div>
                   )}

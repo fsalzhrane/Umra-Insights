@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "test:unit": "vitest run \"src/components/__tests__\"",
+    "test:integration": "vitest run \"src/tests/integration\"",
+    "test:system": "vitest run \"src/tests/system\"",
+    "test:all": "vitest run",
+    "test:smoke": "vitest run \"src/tests/integration/SmokeTesting.test.tsx\"",
+    "test:compatibility": "vitest run \"src/tests/integration/CompatibilityTesting.test.tsx\"",
+    "test:performance": "vitest run \"src/tests/integration/PerformanceTesting.test.tsx\" \"src/tests/system/LoadPerformance.test.tsx\"",
+    "test:e2e": "vitest run \"src/tests/system/EndToEndWorkflow.test.tsx\"",
+    "test:crossbrowser": "echo \"Cross-browser tests require Playwright or similar tool to be setup\""
+  }
+}
